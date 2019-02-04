@@ -1,0 +1,94 @@
+body{
+    background-color: yellow;
+}
+#id1{
+    margin-top: 30px;
+    width: 200px;
+    float: left;
+}
+#id2{
+    width: 160px;
+    background-color: white;
+    padding: 4px;
+    color: purple;
+    border-right: 15px solid #FF7F00;
+    margin:3px 20px 5px 5px;
+}
+#id3{
+    width: 160px;
+    background-color: white;
+    padding: 4px;
+    color: purple;
+    border-right: 15px solid blue;
+    margin:3px 20px 5px 5px;
+}
+
+
+#id11{
+    float: right;
+   margin-right: 50px;
+    height: 300px;
+    width: 1060px;
+    font-size: 17px;
+}
+#id22{
+   color: purple;
+   margin-bottom: 15px;
+   height: 150px;
+   border-bottom: 1px dotted purple;
+}
+#id33{
+   
+    padding: 5px;
+    height: 180px;
+ }
+ #id44{
+   
+    padding: 5px;
+    height: 180px;
+ }
+
+h2{
+    font-family: Arial Black, Gadget, sans-serif;
+    margin-top: 10px;
+    color: purple;
+    font-weight: bold;
+}
+#border1{
+    border: 1px dashed black;
+    margin-bottom: 20px;
+    height: 20px;
+    width: 950px;
+    padding: 7px;
+    font-size: 17px;
+}
+#border2{
+    border: 1px dashed red;
+    margin-bottom: 20px;
+    height: 20px;
+    width: 950px;
+    padding: 7px;
+    font-size: 17px;
+   text-align: right;
+   font-style: italic;
+}
+#border3{
+    border: 1px dotted blue;
+    margin-bottom: 20px;
+    height: 20px;
+    width: 950px;
+    padding: 7px;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+
+}
+
+#footer{
+    color: purple;
+    font-style: italic;
+    font-size: 17px;
+    line-height: 1;
+}
+
+

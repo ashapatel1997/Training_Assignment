@@ -1,0 +1,58 @@
+#div1{
+    border: 1px solid black;
+    height: 250px;
+    width:1004px;
+   
+}
+#div2{
+    border: 3px solid black;
+    height: 250px;
+    width:1000px;
+    margin-top: 40px;
+}
+#div3{
+    height: 324px;
+    width:1000px;
+    margin-top: 40px;
+}
+
+#section1{
+    height: 20px;
+    width:1000px;
+}
+#section11{
+	background-image:url("Assignment-3-img.jpg");
+    height: 230px;
+    width:1004px;
+}
+#section22{
+	background-image:url("Assignment-3-img.jpg");
+	background-position:bottom;
+    border: 1px solid black;
+    height: 228px;
+    width:998px;
+}
+#section3{
+  
+    height: 300px;
+    width:500px;
+    margin-left: 220px;
+}
+
+#image1{
+    height:226px;
+    width:998px;
+    position:absolute;
+    clip:rect(0px,1000px,350px,0px);
+}
+#image2{
+    height:226px;
+    width:999px;
+    position:absolute;
+    clip: rect(90px,110px,300px,0px);
+}
+#image3{
+    height: 300px;
+    width:500px;
+    
+}
