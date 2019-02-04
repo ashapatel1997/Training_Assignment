@@ -1,0 +1,148 @@
+<html>
+	<head>
+		<title>Tables in HTML</title>
+		<style>
+			table,tr,td{
+			border-collapse:collapse;
+			border:1px solid black;
+		
+			}
+			table{
+			width:600;
+			}
+			.h{height:20;}
+			.centerRow{height: 300;}
+			.leftWidth{width: 100;}
+			.rightWidth{width: 75;}
+			.r1{height: 50; background-color:#407a07;}
+			
+			.r3{height: 40; background-color:#00004d; }
+			.c1{text-align:left;}
+			.c2{text-align:center;}
+			.c3{text-align:right;}
+			.imageStyle{height: 230;width: 380; }
+			.lastTable {border-collapse: separate; border-spacing: 1px;}
+		</style>
+	</head>
+	</body>
+		<table align="center" >
+			<tr>
+				<td class="c1">left</td>
+				<td class="c2">center</td>
+				<td class="c3">right</td>
+			</tr>
+			<tr>
+				<td class="c1">left</td>
+				<td class="c2">center</td>
+				<td class="c3">right</td>
+			</tr>
+			<tr>
+				<td class="c1">left</td>
+				<td class="c2">center</td>
+				<td class="c3">right</td>
+			</tr>
+		
+		</table>
+		</br></br>
+		
+		<table align="center">
+			<tr class="h">
+				<th colspan="6">Heading</th>
+			</tr>
+			
+			<tr class="h">
+				<td colspan="6"></td>
+			</tr>
+			
+			<tr class="h">
+				<td rowspan="4"></td>
+				<td ></td>
+				<td ></td>
+				<td></td> </td>
+				<td ></td>
+				<td ></td>
+			</tr>
+			
+			<tr class="h">	
+				<td ></td>
+				<td rowspan="2" colspan="3"></td>
+				<td ></td>
+			</tr>
+			
+			<tr class="h">
+				<td></td> </td>
+				<td ></td>
+			</tr>
+			
+			<tr class="h">	
+				<td ></td>
+				<td ></td>
+				<td ></td>
+				<td ></td>
+				<td> </td>
+			</tr>
+			
+			<tr class="h">
+				<td colspan="6"></td>
+			</tr>
+		</table>
+		
+		</br></br>
+		<table align="center">
+		<tr class="h">
+				<td colspan="2"></td>
+				<td colspan="2"></td>
+				<td colspan="2"></td>
+			</tr>
+		
+			<tr class="h">
+				<td colspan="2" rowspan="4"></td>
+				<td colspan="2"></td>
+				<td colspan="2" rowspan="4"></td>
+			</tr>
+			
+			<tr class="h">
+				<td colspan="2"></td>
+			</tr>
+			
+			<tr class="h">	
+				<td colspan="2"></td>
+			</tr>
+			
+			<tr class="h">
+				<td colspan="2"></td>
+			</tr>
+			
+			<tr class="h">
+				<td colspan="2"></td>
+				<td colspan="2"></td>
+				<td colspan="2"></td>
+			</tr>
+		</table>
+		</br></br>
+
+		<table align="center" class="lastTable">
+			<tr class="r1">	
+				<td ></td>
+				<td ></td>
+				<td ></td>
+				
+			</tr>
+			<tr class="centerRow">	
+				<td class="leftWidth" ></td>
+				<td ><img class="imageStyle" src="frogpicture.jpg"/></td>
+				<td class="rightWidth"></td>
+				
+			</tr>
+			<tr class="r3" >	
+				<td ></td>
+				<td ></td>
+				<td ></td>
+				
+			</tr>
+			</table>
+		
+		
+
+	</body>
+</html>
