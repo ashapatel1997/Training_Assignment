@@ -11,17 +11,19 @@ namespace Assignment_4
     {
         static void Main(string[] args)
         {
-            //string[] Words = new string[] { "boat", "house", "cat", "river", "cupboard" };
             ArrayList Words = new ArrayList() { "boat", "house", "cat", "river", "cupboard" };
-            Words[1] = "home";
-            Console.WriteLine("New Word:");
+
+            foreach (var _Words in Words) //plurals
+                Console.WriteLine(_Words+"s");
+
+            Words[1] = "home"; //change 2nd position
+
+            Console.WriteLine("Enter New Word:"); //added new word
             string NewWord = Console.ReadLine();
             Words.Add(NewWord);
             
-            Console.WriteLine("\n");
-            foreach (var _Words in Words)
-                Console.WriteLine(_Words);
-
+            Console.WriteLine("\nLength of the list:"+Words.Count);
+         
 
             Console.WriteLine("\nWords contains length of characters as 7...\n");
             int count = 0;
@@ -38,15 +40,14 @@ namespace Assignment_4
                 Console.WriteLine("No word found");
 
             Console.WriteLine("\nWord at 3rd position:"+Words[2]+"\n");
+
             Console.WriteLine("\nWords in ascending order...\n");
             Words.Sort();
-
             foreach (var _Words in Words)
                 Console.WriteLine(_Words);
 
             Console.WriteLine("\nWords in reverse order...\n");
             Words.Reverse();
-
             foreach (var _Words in Words)
                 Console.WriteLine(_Words);
 
