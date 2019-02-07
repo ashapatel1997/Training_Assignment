@@ -14,9 +14,7 @@ namespace Assignment_3
             List<Product> ProductList = new List<Product>();
             ProductList.Add(new Product() { Name = "lettuce", Price = 10.5f, Quantity = 50, Type = "Leafy green" });
             ProductList.Add(new Product() { Name = "cabbage", Price = 20, Quantity = 100, Type = "Cruciferous" });
-
             ProductList.Add(new Product() { Name = "pumpkin", Price = 30, Quantity = 30, Type = "Marrow" });
-
             ProductList.Add(new Product() { Name = "cauliflower", Price = 10, Quantity = 25, Type = "Cruciferous" });
             ProductList.Add(new Product() { Name = "zucchini", Price = 20.5f, Quantity = 50, Type = "Marrow" });
             ProductList.Add(new Product() { Name = "yam", Price = 30, Quantity = 50, Type = "Root" });
@@ -29,40 +27,39 @@ namespace Assignment_3
             Console.WriteLine("Total number of  Products in List:" + ProductList.Count+"\n");
 
             
-
-
             ProductList.Add(new Product() { Name = "Potato", Price = 10, Quantity = 50, Type = "Root" });
+
             Console.WriteLine("\nList of Product after adding new product....\n");
             foreach (Product product in ProductList)
             {
                 Console.WriteLine(product);
                 
             }
-            Console.WriteLine("\n");
-            Console.WriteLine("Total number of  Products in List:" + ProductList.Count + "\n");
+          
+            Console.WriteLine("\nTotal number of  Products in List:" + ProductList.Count + "\n");
 
             Console.WriteLine("Products of which have the type 'Leafy green'...\n");
 
-          
             for (int i = 0; i < ProductList.Count; i++) // Loop through List with for
             {
                 if(ProductList[i].Type == "Leafy green")
                     Console.WriteLine(ProductList[i]);
             }
             Console.WriteLine("\n");
+
             for (int i = 0; i < ProductList.Count; i++) 
             {
                 if (ProductList[i].Name == "Garlic")
                     ProductList.Remove(ProductList[i]);
             }
+
             Console.WriteLine("Products after removing 'Gralic'...\n");
             foreach (Product product in ProductList)
             {
                 Console.WriteLine(product);
-
             }
 
-            Console.WriteLine("\nFinal quantity of cabbage in the inventory...\n"); 
+            Console.WriteLine("\nFinal quantity of cabbage in the inventory(after adding 50)...\n"); 
             for (int i = 0; i < ProductList.Count; i++)
             {
                 if (ProductList[i].Name == "cabbage")
@@ -74,6 +71,7 @@ namespace Assignment_3
                 }
                 
             }
+
             float totalPrice = 0;
             for (int i = 0; i < ProductList.Count; i++)
             {
@@ -87,7 +85,6 @@ namespace Assignment_3
                     totalPrice += (zucchini * ProductList[i].Price);
             }
             Console.WriteLine("\nTotal price (lettuce = 1 kg, broccoli=1kg, zucchini = 2 kg): "+totalPrice+" kg\n");
-
         }
 
     }
