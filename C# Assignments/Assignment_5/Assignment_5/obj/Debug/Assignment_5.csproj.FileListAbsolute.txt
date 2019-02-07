@@ -1,0 +1,7 @@
+C:\Users\asha\source\repos\Assignment_5\Assignment_5\bin\Debug\Assignment_5.exe.config
+C:\Users\asha\source\repos\Assignment_5\Assignment_5\bin\Debug\Assignment_5.exe
+C:\Users\asha\source\repos\Assignment_5\Assignment_5\bin\Debug\Assignment_5.pdb
+C:\Users\asha\source\repos\Assignment_5\Assignment_5\obj\Debug\Assignment_5.csproj.CoreCompileInputs.cache
+C:\Users\asha\source\repos\Assignment_5\Assignment_5\obj\Debug\Assignment_5.exe
+C:\Users\asha\source\repos\Assignment_5\Assignment_5\obj\Debug\Assignment_5.pdb
+C:\Users\asha\source\repos\Assignment_5\Assignment_5\obj\Debug\Assignment_5.csprojAssemblyReference.cache
