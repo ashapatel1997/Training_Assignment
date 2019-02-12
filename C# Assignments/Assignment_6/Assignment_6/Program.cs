@@ -56,14 +56,13 @@ public class Program
                      group s.Amount by new
                      {
                          s.EmployeeID,
-                         e.EmployeeFirstName,
+                        e.EmployeeFirstName,
                          e.EmployeeLastName
                      } into totalSal
                      select new
                      {
                          firstName = totalSal.Key.EmployeeFirstName,
                          lastName=totalSal.Key.EmployeeLastName,
-
                          sal = totalSal.Sum()
                      }).OrderBy(x => x.sal);
 
@@ -95,24 +94,34 @@ public class Program
 
     public void Task3()
     {
-        var query = from e in employeeList
-                    join s in salaryList on e.EmployeeID equals s.EmployeeID
-                    where e.Age > 30
-                    group s.Amount by new
-                    {
-                        type = s.Type
-                    } into total
-                    select new
-                    {
-                        avg = total.Average(),
-                       t = total.Key.type
-                    };
-        Console.WriteLine("\n\n----------------Task 3-------------- ");
-
-        foreach (var x in query)
+        var groupById = from e in employeeList
+                        join s in salaryList on e.EmployeeID equals s.EmployeeID
+                        where e.Age > 30
+                        select new
+                        {
+                            id = s.EmployeeID,
+                            type = s.Type,
+                            amount = s.Amount
+                        };
+        var query = from g in groupById.GroupBy(id => id.id) select g;
+                  
+        var monthly = 0;
+        var perfomance = 0;
+        var bonus = 0;
+        foreach (var data in groupById)
         {
-            Console.WriteLine("Mean of "+x.t+" Type:"+x.avg+"\n");
+            if (data.type.Equals(SalaryType.Monthly))
+                monthly += data.amount;
+            if (data.type.Equals(SalaryType.Performance))
+                perfomance += data.amount;
+            if (data.type.Equals(SalaryType.Bonus))
+                bonus += data.amount;
         }
+
+        Console.WriteLine("\n\n----------------Task 3-------------- ");
+        Console.WriteLine("Mean of Monthly Salary: " + monthly/query.Count());
+        Console.WriteLine("Mean of Performance Salary: " + perfomance / query.Count());
+        Console.WriteLine("Mean of Bonus Salary: " + bonus / query.Count()+"\n");
 
     }
     public enum SalaryType
