@@ -14,7 +14,6 @@ namespace MessageBoard
         int Commit();
         PostMessage GetPostById(int id);
         CommentMessage CommentAdd(CommentMessage commentAdd, int Id);
-       // int totalCount();
         int Likes(int id);
     }
 }

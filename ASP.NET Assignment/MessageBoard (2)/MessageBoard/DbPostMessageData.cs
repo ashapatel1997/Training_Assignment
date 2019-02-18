@@ -65,11 +65,7 @@ namespace MessageBoard
             return commentAdd;
         }
 
-        //public int totalCount()
-        //{
-        //    throw new NotImplementedException();
-        //}
-
+       
         public int Likes(int id)
         {
             if (db.postMessage.Find(id).Total_Likes.Equals(null))
