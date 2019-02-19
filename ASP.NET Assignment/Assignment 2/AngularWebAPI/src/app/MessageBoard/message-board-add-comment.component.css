@@ -1,0 +1,18 @@
+#mainDiv{
+    margin:40px 0px 0px 337px;
+    width: 50%;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+#innerDiv{
+    padding: 30px;
+}
+.genderClass{
+    margin-left: 30px;
+}
+.input.ng-touched.ng-invalid{
+    border-color: red;
+}
+.input.ng-valid{
+    border-color: green;
+}

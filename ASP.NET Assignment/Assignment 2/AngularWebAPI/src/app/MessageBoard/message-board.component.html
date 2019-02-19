@@ -1,0 +1,36 @@
+
+    <div class="mainDiv">
+        <h1>MessageBoard</h1>
+        <div>
+            <a routerLink="/add-post"> <button class="btn btn-primary" style="float:right">+Add New Post</button></a>
+      </div><br/><br/>
+        <div *ngFor="let list of listData" style="margin-bottom:30px" >
+         
+             <div  class="panel panel-default">
+                    <div class="panel-heading" style="margin-bottom:20px">
+                        <h3>Id:{{list.id}}</h3>
+                    </div>
+                    <div class="panel-body">
+                        <h4>Post Message:</h4>
+                        <span> {{list.message}}</span>
+                    </div>
+                    <div class="panel-body">
+                        <h4>Comments:</h4>
+                        <div *ngFor="let y of list.comment">
+                            <span> {{y.comment}}</span>
+                        </div>
+                        <button (click)="addcmt(list.id)" class="btn btn-primary">+Add Comment</button>  
+                       
+                    </div>
+              
+                    <div class="panel-footer">
+                        <a  class="btn btn-primary" (click)="addLike(list.id)" >Like</a>
+                        <label style="float:right;font-size:20px">{{list.total_Likes}}</label>
+                        <br/>
+                    </div>
+                </div>
+                
+            </div>
+    </div> 
+    
+

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Add Post</title>
+</head>
+<body>
+  <div id="mainDiv" >
+      <div id="innerDiv">
+            <form (ngSubmit)="savePost()" #form="ngForm" autocomplete="off">
+                    <div class="form-group"> Message<br/>
+                        <input type="text" name="message" id="message" [(ngModel)]="postMessage.message" class="form-control" required/>
+                    </div><br/>
+          
+                    <button class="btn btn-primary" type="submit" value="Submit" [disabled]="form.invalid">SAVE</button>
+            </form>
+      </div>
+</div>
+</body>
+</html>

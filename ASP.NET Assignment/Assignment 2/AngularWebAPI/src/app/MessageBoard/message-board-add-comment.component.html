@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Add Comment</title>
+</head>
+<body>
+  <div id="mainDiv" >
+      <div id="innerDiv">
+            <form  #form="ngForm" (ngSubmit)="saveComment(postMessage.id)" autocomplete="off">
+                    <div class="form-group"> <br/>
+                      <div> <h3>Id:</h3>
+                        
+                        <p>{{postMessage.id}}</p></div>
+                      <div> <h3>Message:</h3>
+                      <p>{{postMessage.message}}</p></div>
+                      <div> <h3>Comment:</h3></div> 
+                      <input type="text" name="comment" id="comment" [(ngModel)]="commentAdd.comment" class="form-control" required/> 
+                 
+                      </div><br/>
+         
+                    <button class="btn btn-primary" type="submit" value="Submit" [disabled]="form.invalid">SAVE</button>
+            </form>
+      </div>
+</div>
+</body>
+</html>
