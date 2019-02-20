@@ -28,7 +28,7 @@ export class MessageBoardService {
 
   addComment(commentAdd:CommentMessage, id:number)
   {
-    alert("2:"+id);
+    
     return this.http.post('http://localhost:54637/api/addComment/'+id,commentAdd);
   }
 
