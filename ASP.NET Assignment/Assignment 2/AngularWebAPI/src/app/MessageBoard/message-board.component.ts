@@ -6,7 +6,7 @@ import { Router} from '@angular/router';
 @Component({
   selector: 'app-message-board',
   templateUrl: './message-board.component.html',
-  styleUrls: ['./message-board.component.css']
+  styleUrls: ['../app.component.css']
 })
 export class MessageBoardComponent implements OnInit {
   listData: PostMessage[];

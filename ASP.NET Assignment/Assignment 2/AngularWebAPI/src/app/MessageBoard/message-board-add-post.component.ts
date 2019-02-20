@@ -7,7 +7,7 @@ import {Router } from '@angular/router';
 @Component({
   selector: 'app-message-board-add-post',
   templateUrl: './message-board-add-post.component.html',
-  styleUrls: ['./message-board-add-post.component.css']
+  styleUrls: ['../app.component.css']
 })
 export class MessageBoardAddPostComponent implements OnInit {
 

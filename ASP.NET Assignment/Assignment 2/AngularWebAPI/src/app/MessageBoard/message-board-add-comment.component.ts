@@ -6,7 +6,7 @@ import { PostMessage } from '../shared/post-message.model';
 @Component({
   selector: 'app-message-board-add-comment',
   templateUrl: './message-board-add-comment.component.html',
-  styleUrls: ['./message-board-add-comment.component.css']
+  styleUrls: ['../app.component.css']
 })
 export class MessageBoardAddCommentComponent implements OnInit {
 
