@@ -20,6 +20,7 @@ export class MessageBoardAddPostComponent implements OnInit {
   savePost()
   {
      this.service.addPost(this.postMessage).subscribe();
+     this.service.refreshPage();
      this.router.navigate(['message-board']);
   }
 

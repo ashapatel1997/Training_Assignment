@@ -21,6 +21,7 @@ export class MessageBoardComponent implements OnInit {
         this.listData = data as PostMessage[];
         console.log(this.listData);
       }); 
+     // this.service.refreshPage();
   }
 
   addLike(id:number)

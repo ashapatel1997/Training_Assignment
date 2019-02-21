@@ -26,7 +26,7 @@ export class MessageBoardAddCommentComponent implements OnInit {
   saveComment(id:number){
    
     this.service.addComment(this.commentAdd, id).subscribe();
-    
+    this.service.refreshPage();
     this.router.navigate(['message-board']);
   }
 

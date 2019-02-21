@@ -37,4 +37,9 @@ export class MessageBoardService {
     
     return this.http.get('http://localhost:54637/api/postById/'+id);
   }
+
+  refreshPage()
+  {
+    this.http.get('http://localhost:54637/api/allPost').toPromise().then(p=>this.postMessage=p as PostMessage);
+  }
 }
