@@ -7,11 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5E3ABCF522409B3A001A625D /* radio-off.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E3ABCF322409B3A001A625D /* radio-off.png */; };
-		5E3ABCF622409B3A001A625D /* radio-on.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E3ABCF422409B3A001A625D /* radio-on.png */; };
 		5E3ABCFF2240B243001A625D /* secondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E3ABCFE2240B243001A625D /* secondViewController.m */; };
-		5E3ABD022240BA21001A625D /* off.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5E3ABD002240BA21001A625D /* off.gif */; };
-		5E3ABD032240BA21001A625D /* on.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E3ABD012240BA21001A625D /* on.png */; };
+		5EBCC4F32248B0C6000093EE /* off.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5EBCC4F12248B0C5000093EE /* off.gif */; };
+		5EBCC4F42248B0C6000093EE /* on.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EBCC4F22248B0C6000093EE /* on.png */; };
 		5EFA353D223F74E10044EF50 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EFA353C223F74E10044EF50 /* AppDelegate.m */; };
 		5EFA3540223F74E10044EF50 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EFA353F223F74E10044EF50 /* ViewController.m */; };
 		5EFA3543223F74E10044EF50 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EFA3541223F74E10044EF50 /* Main.storyboard */; };
@@ -40,12 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5E3ABCF322409B3A001A625D /* radio-off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "radio-off.png"; path = "../../../../Documents/radio-off.png"; sourceTree = "<group>"; };
-		5E3ABCF422409B3A001A625D /* radio-on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "radio-on.png"; path = "../../../../Documents/radio-on.png"; sourceTree = "<group>"; };
 		5E3ABCFD2240B243001A625D /* secondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = secondViewController.h; sourceTree = "<group>"; };
 		5E3ABCFE2240B243001A625D /* secondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = secondViewController.m; sourceTree = "<group>"; };
-		5E3ABD002240BA21001A625D /* off.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = off.gif; path = ../../../../Documents/off.gif; sourceTree = "<group>"; };
-		5E3ABD012240BA21001A625D /* on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = on.png; path = ../../../../Documents/on.png; sourceTree = "<group>"; };
+		5EBCC4F12248B0C5000093EE /* off.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = off.gif; path = ../../../../../Documents/off.gif; sourceTree = "<group>"; };
+		5EBCC4F22248B0C6000093EE /* on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = on.png; path = ../../../../../Documents/on.png; sourceTree = "<group>"; };
 		5EFA3538223F74E10044EF50 /* Assignment_2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Assignment_2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EFA353B223F74E10044EF50 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5EFA353C223F74E10044EF50 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -92,10 +88,8 @@
 		5E3ABCF222409A8A001A625D /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				5E3ABD002240BA21001A625D /* off.gif */,
-				5E3ABD012240BA21001A625D /* on.png */,
-				5E3ABCF322409B3A001A625D /* radio-off.png */,
-				5E3ABCF422409B3A001A625D /* radio-on.png */,
+				5EBCC4F12248B0C5000093EE /* off.gif */,
+				5EBCC4F22248B0C6000093EE /* on.png */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -263,13 +257,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E3ABD022240BA21001A625D /* off.gif in Resources */,
 				5EFA3548223F74E10044EF50 /* LaunchScreen.storyboard in Resources */,
+				5EBCC4F42248B0C6000093EE /* on.png in Resources */,
 				5EFA3545223F74E10044EF50 /* Assets.xcassets in Resources */,
 				5EFA3543223F74E10044EF50 /* Main.storyboard in Resources */,
-				5E3ABCF622409B3A001A625D /* radio-on.png in Resources */,
-				5E3ABD032240BA21001A625D /* on.png in Resources */,
-				5E3ABCF522409B3A001A625D /* radio-off.png in Resources */,
+				5EBCC4F32248B0C6000093EE /* off.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
